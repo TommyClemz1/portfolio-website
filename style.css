@@ -1,0 +1,777 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: white;
+    background-color: rgb(35, 45, 63);
+    font-family: 'Exo 2', sans-serif;
+}
+
+header {
+    padding: .6rem;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    box-shadow: 0 2px 5px rgb(13, 20, 33);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.button {
+    display: none;
+
+}
+
+.my-logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+
+.gradient-background {
+    background: linear-gradient(300deg, rgb(70, 79, 121), rgb(0, 0, 0), rgb(35, 45, 63));
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+}
+
+/* HOMEPAGE SECTION  SECTION-1  */
+
+
+
+nav>ul>li {
+    display: inline;
+    padding: 10px;
+}
+
+nav>ul>li>a {
+    text-decoration: none;
+    color: white;
+    font-size: large;
+    padding: 2px;
+}
+
+nav>ul>li>a:hover {
+    cursor: pointer;
+    animation: animate 1s ease-in infinite;
+    color: rgb(216, 167, 88);
+    border-bottom: 1px dashed rgb(122, 93, 43);
+}
+
+#contact,
+#home {
+    padding-top: 50px;
+}
+
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+.imgntxt-container {
+    margin-top: 4rem;
+    margin-left: 7rem;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    width: 80%;
+
+}
+
+.photo-container {
+    height: 200px;
+    width: 200px;
+    border: 3px solid rgb(115, 95, 50);
+    border-radius: 50%;
+    box-shadow: 20px 20px 2px rgb(180, 143, 58);
+}
+
+.welcome {
+    letter-spacing: 3px;
+    font-size: 3rem;
+}
+
+
+.imgntxt-container>div>p {
+    font-size: 1.6rem;
+    margin-top: 1rem;
+}
+
+code {
+    font-family: 'Source Code Pro', monospace;
+}
+
+
+/* SKILLS SECTION   SECTION 2*/
+
+.skills-container {
+    margin: 30px auto;
+    width: 60%;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 5px 8px rgb(13, 20, 33);
+}
+
+.skills-container>h2 {
+    text-decoration: underline;
+
+}
+
+.skills-container>.skills-container-main>.html {
+    font-size: 20px;
+}
+
+.skills-container>.skills-container-main>.css {
+    font-size: 20px;
+}
+
+.skills-container>.skills-container-main>.bootstrap {
+    font-size: 20px;
+}
+
+.skills-container>.skills-container-main>.javascript {
+    font-size: 20px;
+}
+
+.jar {
+    margin-left: 47%;
+    font-size: 16px;
+}
+
+.htm {
+    margin-left: 80%;
+    font-size: 16px;
+}
+
+.btstr {
+    margin-left: 40%;
+    font-size: 16px;
+}
+
+.cscss {
+    margin-left: 65%;
+    font-size: 16px;
+}
+
+.circle {
+    top: -2px;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: white;
+    position: relative;
+}
+
+.html,
+.css,
+.bootstrap,
+.javascript {
+    margin-top: 2rem;
+}
+
+.javascript {
+    margin-bottom: 2rem;
+}
+
+
+
+.progress-container {
+    height: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(13, 20, 33);
+}
+
+.progress-html {
+    background-color: rgb(198, 151, 73);
+    height: 10px;
+    width: 90%;
+    border-radius: 10px;
+    position: relative;
+}
+
+
+.progress-html>.circle {
+    left: 98%;
+}
+
+
+
+.progress-css {
+    background-color: rgb(198, 151, 73);
+    height: 10px;
+    width: 70%;
+    border-radius: 10px;
+    position: relative;
+}
+
+.progress-css>.circle {
+    left: 97%;
+}
+
+.progress-bootstrap {
+    background-color: rgb(198, 151, 73);
+    height: 10px;
+    width: 50%;
+    border-radius: 10px;
+    position: relative;
+}
+
+.progress-bootstrap>.circle {
+    left: 96%;
+}
+
+.progress-javascript {
+    background-color: rgb(198, 151, 73);
+    height: 10px;
+    width: 60%;
+    border-radius: 10px;
+    position: relative;
+}
+
+.progress-javascript>.circle {
+    left: 97%;
+}
+
+/* PROJECT SECTION  SECTION-3 */
+
+
+.proj {
+    margin-left: 15%;
+    margin-bottom: 1rem;
+    display: inline-block;
+}
+
+.proj>h2 {
+    position: relative;
+    text-decoration: underline;
+    padding-top: 50px;
+
+}
+
+
+
+.project-display {
+    display: flex;
+    padding: 20px;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.one,
+.two,
+.three,
+.four,
+.five,
+.six {
+    min-height: 300px;
+    width: 500px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px black;
+    background-size: cover;
+    /* Add this line */
+    background-position: center;
+    cursor: pointer;
+
+}
+
+
+
+
+.one::after {
+    content: "Huddle";
+    /* Your image description */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    /* Black background with 60% opacity */
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.two::after {
+    content: "Dice game";
+    /* Your image description */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    /* Black background with 60% opacity */
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.three::after {
+    content: "Result Checker";
+    /* Your image description */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    /* Black background with 60% opacity */
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.four::after {
+    content: "Perfume";
+    /* Your image description */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    /* Black background with 60% opacity */
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.five::after {
+    content: "Drum game";
+    /* Your image description */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    /* Black background with 60% opacity */
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.six::after {
+    content: "Crowdfund";
+    /* Your image description */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    /* Black background with 60% opacity */
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+
+.one {
+    background-image: url(./huddle.jpg);
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+}
+
+.two {
+    background-image: url(./DICE.jpg);
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+}
+
+.three {
+    background-image: url(./score.jpg);
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+}
+
+.four {
+    background-image: url(./perfume.jpg);
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+}
+
+.five {
+    background-image: url(./drum.jpg);
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+}
+
+.six {
+    background-image: url(./crowdfund.jpg);
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+/* ABOUT ME SECTION  SECTION-4 */
+
+.about {
+    width: 80%;
+    margin: 10px auto 0 13%;
+    line-height: 35px;
+    font-size: 1.2rem;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.about>p {
+    width: 90%;
+}
+
+
+
+
+
+#about {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.about>h2 {
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
+
+/* FEEDBACK SECTION  SECTION 5*/
+
+
+.give-feedback {
+    border: none;
+    height: 590px;
+    width: 70%;
+    box-shadow: 0 5px 8px rgb(13, 20, 33);
+    border-radius: 20px;
+    margin: 5rem auto 2rem auto;
+    padding: 20px;
+}
+
+
+.give-feedback>h2 {
+    text-decoration: underline;
+
+}
+
+section.give-feedback>form>button {
+    width: 50%;
+    height: 40px;
+    border: none;
+    background-color: rgb(198, 151, 73);
+    margin-left: 26%;
+    color: white;
+    border-radius: 5px;
+}
+
+
+section.give-feedback>form>input[type="email"] {
+    font-size: 1rem;
+}
+
+section.give-feedback>form>input[type="text"] {
+    font-size: 1rem;
+}
+
+input {
+    padding: 10px;
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: none;
+    font-size: larger;
+    outline: none;
+}
+
+textarea {
+    padding: 10px;
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: none;
+    font-size: .9rem;
+    outline: none;
+    font-family: 'Exo 2', sans-serif;
+}
+
+form p {
+
+    margin-left: 6rem;
+    color: red;
+    font-style: italic;
+}
+
+
+#contact>form>button {
+    cursor: pointer;
+    color: black;
+}
+
+#contact>form>button:hover {
+    color: white;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: rgb(15, 25, 46);
+    padding: 2rem;
+}
+
+.imgndt {
+    align-items: center;
+    display: flex;
+    gap: 10px;
+}
+
+.icons {
+    display: flex;
+    gap: 15px;
+}
+
+.img-icon {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+footer>div>.icons>a:nth-child(1) {
+    color: white;
+}
+
+footer>div>.icons>a:nth-child(2) {
+    color: white;
+}
+
+footer>div>.icons>a:nth-child(3) {
+    color: white;
+}
+
+hr {
+    width: 90%;
+    margin: 0 auto .6rem auto;
+    color: whitesmoke;
+}
+
+footer>div>span {
+    font-size: .8rem;
+    font-size: xx-small;
+    text-align: center;
+}
+
+
+.homepage {
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.inc2 {
+    display: none;
+}
+
+
+
+
+/* ANIMATION AND MEDIA QUERY */
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+
+
+
+@media (min-width:100px) and (max-width:370px) {
+    .btn {
+        top: 80%;
+        left: 45%;
+        padding: 3px;
+    }
+
+    .icons {
+        flex-direction: column;
+    }
+
+    .imgndt {
+        flex-direction: column;
+    }
+
+    footer>div>span {
+        font-size: .8rem;
+    }
+
+}
+
+@media (max-width:200px) {
+    .btn {
+        top: 80%;
+        left: 30%;
+    }
+
+}
+
+@media (max-width:225px) {
+    .btn {
+        top: 80%;
+        left: 30%;
+    }
+
+    .homepgtxt {
+        display: none;
+    }
+
+}
+
+@media (min-width:370px) and (max-width:456px) {
+    .btn {
+        top: 80%;
+        left: 60%;
+    }
+}
+
+
+
+@media (max-width:560px) {
+    .imgntxt-container {
+        flex-direction: column;
+        text-align: start;
+        margin-left: 2rem;
+    }
+
+
+    nav>ul>li {
+        display: flex;
+        padding: 10px;
+        justify-content: center;
+    }
+
+
+    nav>ul>li>a {
+        padding: 5px;
+    }
+
+
+
+    .links {
+        background-color: rgb(35, 45, 63);
+        display: none;
+        position: absolute;
+        top: 3.6rem;
+        width: 50%;
+        right: 0.5rem;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        box-shadow: 0 5px 8px rgb(13, 20, 33);
+    }
+
+    .button {
+        display: block;
+    }
+
+
+
+    form p {
+
+        margin-left: 1rem;
+        font-size: small;
+
+    }
+
+
+
+    div.imgntxt-container>div>code {
+        font-size: xx-large;
+
+    }
+
+    .skills-container {
+        width: 90%;
+    }
+
+    .give-feedback {
+        width: 90%;
+    }
+
+    .photo-container {
+        box-shadow: 2px 2px 20px rgb(180, 143, 58);
+        height: 195px;
+        width: 195px;
+    }
+
+
+
+
+    .htm {
+        margin-left: 70%;
+    }
+
+    .btstr {
+        margin-left: 40%;
+    }
+
+    .cscss {
+        margin-left: 65%;
+    }
+
+    .inc {
+        display: none;
+    }
+
+    .inc2 {
+        display: block;
+    }
+
+    body>footer>div>span {
+        width: 30%;
+    }
+
+    .one,
+    .two,
+    .three,
+    .four,
+    .five,
+    .six {
+        min-height: 200px;
+        width: 300px;
+    }
+
+
+
+
+
+}
